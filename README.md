@@ -66,3 +66,24 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+## Integrate coreUI
+
+### Install CoreUI
+Install CoreUI as a Node.js module using npm.
+
+### `npm install @coreui/coreui`
+
+### Importing JavaScript
+Import CoreUI’ JavaScript by adding this line to your app’s entry point (usually index.js or app.js):
+
+
+### `import 'coreui';`
+
+Alternatively, you may import plugins individually as needed:
+
+`import 'coreui/js/dist/ajax-load';`
+
+`import 'coreui/js/dist/sidebar';`
+
+CoreUi is dependent on Bootstrap, jQuery and Popper, these are defined as peerDependencies, this means that you will have to make sure to add both of them to your package.json using npm install --save bootstrap jquery popper.js.
